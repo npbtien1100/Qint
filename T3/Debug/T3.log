@@ -1,0 +1,8 @@
+﻿  lib.cpp
+C:\Users\trann\Desktop\T3\T3\lib.cpp(10,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\trann\Desktop\T3\T3\lib.cpp(21,20): warning C4018: '<': signed/unsigned mismatch
+  main.cpp
+  QInt.cpp
+  Generating Code...
+C:\Users\trann\Desktop\T3\T3\main.cpp(15): warning C4715: 'ChuyenHeCoSo': not all control paths return a value
+  T3.vcxproj -> C:\Users\trann\Desktop\T3\Debug\T3.exe
