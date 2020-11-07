@@ -44,6 +44,7 @@ Note: để thoát chương trình chúng ta có thể sử dụng lệnh exit, 
 	Trong trường hợp có pipe hàm sẽ tách chuỗi input thành 2 chuỗi argv và argv_right.
 	vd: chuỗi input = "ls -l|less"
 		Sau khi chạy hàm separateString sẽ trả về kết quả là 1 và sẽ tách chuỗi input thành hai mảng argv, argv_right.
+		
 		argv[0] = "ls"
 		argv[1] = "-l"
 		
