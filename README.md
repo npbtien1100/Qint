@@ -29,7 +29,8 @@
 6. Kiểm tra command có chuyển hướng hay không. Nếu có thì thực hiện hàm chuyển hướng rồi quay lại bước 2 tiếp tục thực hiện command mới.
 7. Kiểm tra chương trình có chạy ngầm hay không. Nếu có chạy ngầm cờ `background` sẽ được bật lên 1, nếu không thì cờ `background` sẽ được giữ lại 0.
 8. Thực thi chương trình trong hàm `execvpArgs`. Sau đó quay lại bước 2.
-**Note: để thoát chương trình chúng ta có thể sử dụng lệnh exit, hoặc nhấm phím tổ hợp `Ctr + C` hoặc `Ctr + Z`.
+
+#####Note: để thoát chương trình chúng ta có thể sử dụng lệnh exit, hoặc nhấm phím tổ hợp `Ctr + C` hoặc `Ctr + Z`.
 
 
 ##### Các hàm quan trọng
