@@ -56,7 +56,7 @@ Note: để thoát chương trình chúng ta có thể sử dụng lệnh exit, 
 ### Các testcase
 **Thực thi lệnh**
 ![](https://i.imgur.com/fuwVskl.png)
-
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/LztjX5l" data-context="false" ><a href="//imgur.com/a/LztjX5l"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 ---
 
 
