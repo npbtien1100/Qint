@@ -1,4 +1,4 @@
-# Simple Shell
+# Simple Shell - `DCBA`
 
 
 
@@ -10,7 +10,7 @@
     -   `18120629`: Trần Văn Tú
     -   `18120636`: Trần Ngọc Tuấn
 
-#### *Tất cả các chức năng đều đạt độ hoàn thiện 99%
+#### Tất cả các chức năng đều đạt độ hoàn thiện 99%
 
 ### Hướng thiết kế của đồ án
 ##### Ngôn ngữ và môi trường lập trình
@@ -34,7 +34,7 @@ Note: để thoát chương trình chúng ta có thể sử dụng lệnh exit, 
 
 
 ##### Các hàm quan trọng
-1. Hàm `TokenWord` dùng để tách chuỗi input theo khoảng cách, khoảng trống, dấu tab,.. Kết quả hàm này sẽ thu được là một mảng hai chiều các chuỗi đã nhập.
+1. Hàm `tokenWord` dùng để tách chuỗi input theo khoảng cách, khoảng trống, dấu tab,.. Kết quả hàm này sẽ thu được là một mảng hai chiều các chuỗi đã nhập.
 	Ví dụ: chuỗi str= "echo hello"
 		sau khi chạy hàm TokenWord sẽ thu được mảng argv như sau: 
 		argv[0] = "echo"
@@ -56,10 +56,6 @@ Note: để thoát chương trình chúng ta có thể sử dụng lệnh exit, 
 ### Các testcase
 **Thực thi lệnh**
 ![](https://i.imgur.com/fuwVskl.png)
-
-
-
-
 
 ---
 
