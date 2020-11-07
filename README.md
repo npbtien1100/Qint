@@ -1,4 +1,4 @@
-# `osh` (Simple Shell)
+# Simple Shell
 
 
 
