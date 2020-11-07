@@ -51,7 +51,9 @@ Note: để thoát chương trình chúng ta có thể sử dụng lệnh exit, 
 		argv_right[0]="less"
 3. Hàm `execArgsBuiltIn` dùng để kiểm tra và thực thi các câu lệnh thuộc loại BuiltIn (BuiltIn là những câu lệnh như: history, cd, !!, help, hello ) 
 4. Hàm `execArgs` dùng để thực thi những command line đơn giản như: echo hello, ls, cat, ...
-5. Hàm `execArgsRedirector` thực thi các câu lệnh trong trường hợp có chuyển hướng.
+5. Hàm execArgsPiped thực hiện pipe nhận hai lệnh được tách ra từ hàm separateString
+Nguyên lí thiết kế của hàm là tạo ra một ống ‘pipe’ bằng hàm hệ thống pipe(), sau đó chương trình cha sẽ tạo ra 2 tiến trình con chạy song song, 2 tiến trình này sẽ gửi nhận dữ liệu thông qua đường ống ‘pipe’ đã tạo. Chương trình cha sẽ dừng lại đợi đến khi 2 tiến trình con hoàn thành công việc.
+6. Hàm `execArgsRedirector` thực thi các câu lệnh trong trường hợp có chuyển hướng.
 
 ### Các testcase
 **Thực thi lệnh**
