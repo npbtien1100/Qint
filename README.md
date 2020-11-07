@@ -10,7 +10,7 @@
     -   `18120629`: Trần Văn Tú
     -   `18120636`: Trần Ngọc Tuấn
 
-#### *Tất cả các chức năng đều đạt độ hoàn thiện 100%
+#### *Tất cả các chức năng đều đạt độ hoàn thiện 99%
 
 ### Hướng thiết kế của đồ án
 ##### Ngôn ngữ và môi trường lập trình
@@ -34,13 +34,23 @@ Note: để thoát chương trình chúng ta có thể sử dụng lệnh exit, 
 
 
 ##### Các hàm quan trọng
-
-
-
-##### Về lớp lệnh built-in
-
-Các lệnh built-in của shell hiện chỉ mang tính sơ khai và phục vụ một số tính năng phụ (như thay đổi kích thước lịch sử lệnh sử dụng `histsize`, xem hướng dẫn sử dụng `histsize`, v.v.). Lớp lệnh này có thể phát triển thêm nếu có thời gian mở rộng.
-
+1. Hàm `TokenWord` dùng để tách chuỗi input theo khoảng cách, khoảng trống, dấu tab,.. Kết quả hàm này sẽ thu được là một mảng hai chiều các chuỗi đã nhập.
+	Ví dụ: chuỗi str= "echo hello"
+		sau khi chạy hàm TokenWord sẽ thu được mảng argv như sau: 
+		argv[0] = "echo"
+		argv[1] = "hello"
+2. Hàm `separateString` dùng để tách chuỗi input đầu vào trong trường hợp có Pipe ('|').
+	Hàm return 1: khi command có pipe, return 0: khi command không có pipe. 
+	Trong trường hợp có pipe hàm sẽ tách chuỗi input thành 2 chuỗi argv và argv_right.
+	vd: chuỗi input = "ls -l|less"
+		Sau khi chạy hàm separateString sẽ trả về kết quả là 1 và sẽ tách chuỗi input thành hai mảng argv, argv_right.
+		argv[0] = "ls"
+		argv[1] = "-l"
+		
+		argv_right[0]="less"
+3. Hàm `execArgsBuiltIn` dùng để kiểm tra và thực thi các câu lệnh thuộc loại BuiltIn (BuiltIn là những câu lệnh như: history, cd, !!, help, hello ) 
+4. Hàm `execArgs` dùng để thực thi những command line đơn giản như: echo hello, ls, cat, ...
+5. Hàm `execArgsRedirector` thực thi các câu lệnh trong trường hợp có chuyển hướng.
 
 ### Các testcase
 **Thực thi lệnh**
